@@ -3,17 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ferdousur Rahman— Software Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<title>Ferdousur Rahman — Software Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     NAV
-════════════════════════════════════════ -->
 <nav>
-  <span class="nav-name">Ferdous</span>
+  <span class="nav-name">Ferdous.</span>
   <ul class="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -22,31 +19,33 @@
   </ul>
 </nav>
 
-
 <div class="container">
 
   <!-- ═══════════════════════════════════════
-       HERO
+       HERO SECTION
   ════════════════════════════════════════ -->
   <div class="hero" id="home">
+    
+    <div class="hero-content">
+      <h1 class="hero-name">Hi, I'm <br> Ferdousur <em>Rahman</em></h1>
+      <p class="hero-role">.NET Backend Developer · Dhaka, Bangladesh</p>
+      <p class="hero-bio">
+        I build scalable backend systems with C# and ASP.NET Core. 
+        Passionate about Clean Architecture, Domain-Driven Design, and solving complex operational problems with code.
+      </p>
 
-    <!-- EDIT: তোমার নাম -->
-    <h1 class="hero-name">Ferdousur <em>Rahman</em></h1>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <!-- CV DOWNLOAD BUTTON ADDED HERE -->
+        <a href="CV of Ferdousur Rahman.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
 
-    <!-- EDIT: তোমার role -->
-    <p class="hero-role">.NET Backend Developer · Dhaka, Bangladesh</p>
-
-    <!-- EDIT: তোমার bio -->
-    <p class="hero-bio">
-      Building scalable backend systems with C# and ASP.NET Core.
-      Focused on clean architecture, domain-driven design, and writing code that is easy to maintain.
-    </p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-      <!-- EDIT: CV link -->
-      <a href="YOUR_CV_LINK" target="_blank" class="btn btn-ghost">Download CV</a>
+    <!-- PHOTO SECTION -->
+    <div class="hero-image-container">
+      <!-- Ensure you have a file named profile.jpg in your folder -->
+      <img src="my-portfolio.jpg" alt="Ferdousur Rahman" class="hero-img" onerror="this.src='https://via.placeholder.com/400x400?text=Photo'">
     </div>
 
   </div>
@@ -54,206 +53,182 @@
 
 
   <!-- ═══════════════════════════════════════
-       SKILLS
-       নতুন group → .skill-group div copy করো
-       নতুন tag   → .tag span copy করো
+       SKILLS SECTION
   ════════════════════════════════════════ -->
   <div class="section" id="skills">
-    <p class="section-label">Skills</p>
+    <h2 class="section-title">Technical Skills</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span class="tag highlight">C#</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
 
-    <!-- Skill Group 1 -->
-    <div class="skill-group">
-      <p class="skill-group-name">Languages & Frameworks</p>
-      <div class="tags">
-        <span class="tag highlight">C#</span>
-        <span class="tag highlight">ASP.NET Core</span>
-        <span class="tag">Entity Framework Core</span>
-        <span class="tag">REST API</span>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <div class="tags">
+          <span class="tag highlight">ASP.NET Core</span>
+          <span class="tag">Entity Framework</span>
+          <span class="tag">ADO.NET</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Database & Cloud</h3>
+        <div class="tags">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">Redis</span>
+          <span class="tag">Docker</span>
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <h3>Concepts</h3>
+        <div class="tags">
+          <span class="tag">Clean Architecture</span>
+          <span class="tag">REST API</span>
+          <span class="tag">SOLID</span>
+          <span class="tag">Multi-tenancy</span>
+        </div>
       </div>
     </div>
-
-    <!-- Skill Group 2 -->
-    <div class="skill-group">
-      <p class="skill-group-name">Database</p>
-      <div class="tags">
-        <span class="tag highlight">PostgreSQL</span>
-        <span class="tag">SQL Server</span>
-        <span class="tag">Migrations</span>
-      </div>
-    </div>
-
-    <!-- Skill Group 3 -->
-    <div class="skill-group">
-      <p class="skill-group-name">Architecture & Patterns</p>
-      <div class="tags">
-        <span class="tag">Clean Architecture</span>
-        <span class="tag">Repository Pattern</span>
-        <span class="tag">SOLID</span>
-        <span class="tag">Multi-tenancy</span>
-        <span class="tag">JWT Auth</span>
-      </div>
-    </div>
-
-    <!-- Skill Group 4 -->
-    <div class="skill-group">
-      <p class="skill-group-name">Tools</p>
-      <div class="tags">
-        <span class="tag">Git</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Serilog</span>
-        <span class="tag">Postman</span>
-      </div>
-    </div>
-
   </div>
   <!-- /skills -->
 
 
   <!-- ═══════════════════════════════════════
-       PROJECTS
-       নতুন project → .project-card div copy করো
+       PROJECTS SECTION
   ════════════════════════════════════════ -->
   <div class="section" id="projects">
-    <p class="section-label">Projects</p>
+    <h2 class="section-title">Featured Projects</h2>
 
     <!-- Project 1 -->
-    <a href="https://github.com/yourusername/project" target="_blank" class="project-card">
-      <div class="project-top">
-        <!-- EDIT: project নাম -->
-        <h3 class="project-name">Project Name</h3>
-        <span class="project-link">GitHub ↗</span>
+    <a href="https://github.com/ferdousur/TenantBasedDukaan" target="_blank" class="project-card">
+      <div class="project-header">
+        <h3 class="project-name">TenantBasedDukaan (SaaS)</h3>
+        <span class="project-year">2026</span>
       </div>
-      <!-- EDIT: project description -->
       <p class="project-desc">
-        Short description of what this project does, what problem it solves,
-        and what makes it interesting technically.
+        A multi-tenant e-commerce platform using Clean Architecture. Features tenant isolation middleware, EF Core interceptors for data security, and JWT-based RBAC.
       </p>
-      <!-- EDIT: technologies used -->
       <div class="tags">
-        <span class="tag">ASP.NET Core</span>
+        <span class="tag">ASP.NET Core 8</span>
         <span class="tag">PostgreSQL</span>
-        <span class="tag">Clean Architecture</span>
-        <span class="tag">JWT</span>
+        <span class="tag">Middleware</span>
       </div>
     </a>
 
     <!-- Project 2 -->
-    <a href="https://github.com/yourusername/project2" target="_blank" class="project-card">
-      <div class="project-top">
-        <h3 class="project-name">Another Project</h3>
-        <span class="project-link">GitHub ↗</span>
+    <a href="https://github.com/ferdousur/Dotnet-MiniOrm" target="_blank" class="project-card">
+      <div class="project-header">
+        <h3 class="project-name">MiniOrm (Custom Framework)</h3>
+        <span class="project-year">2026</span>
       </div>
       <p class="project-desc">
-        Another project description. Keep it short and focused on
-        what you built and what you learned.
+        A lightweight ORM built from scratch using Reflection and Expression Trees. Includes a custom migration engine and attribute-based mapping.
       </p>
       <div class="tags">
         <span class="tag">C#</span>
-        <span class="tag">Entity Framework</span>
+        <span class="tag">Reflection</span>
+        <span class="tag">ADO.NET</span>
       </div>
     </a>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-name">IT Infrastructure Automation</h3>
+        <span class="project-year">Work Experience</span>
+      </div>
+      <p class="project-desc">
+        Optimized SQL queries for Hospital Management Systems and automated routine backups. Managed Linux/Windows servers ensuring 99.9% uptime.
+      </p>
+      <div class="tags">
+        <span class="tag">SQL Server</span>
+        <span class="tag">Linux Admin</span>
+        <span class="tag">Automation</span>
+      </div>
+    </div>
 
   </div>
   <!-- /projects -->
 
 
   <!-- ═══════════════════════════════════════
-       ABOUT
-       নতুন info row → .info-row div copy করো
+       ABOUT SECTION (SEPARATE)
   ════════════════════════════════════════ -->
   <div class="section" id="about">
-    <p class="section-label">About</p>
-
-    <!-- EDIT: তোমার about text -->
-    <div class="about-text" style="margin-bottom: 2rem;">
-      <p>
-        Write a short paragraph about yourself here.
-        Who you are, what you do, what you care about technically.
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p class="about-text">
+        I am a final-year CSE student at <strong>Atish Dipankar University of Science & Technology (ADUST)</strong>. My journey started with fixing real-world IT issues, which taught me the value of reliable code. Now, I focus on building robust backend systems using .NET.
       </p>
-      <p>
-        A second paragraph about your learning journey or goals.
+      <p class="about-text">
+        I enjoy digging into how things work under the hood—whether it's an ORM internals or Network Protocols. I am currently looking for opportunities to apply my skills in a challenging backend role.
       </p>
+      
+      <div class="info-list">
+        <div class="info-item">
+          <span class="label">Education:</span>
+          <span class="value">B.Sc. in CSE (Final Year)</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Location:</span>
+          <span class="value">Dhaka, Bangladesh</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Status:</span>
+          <span class="value available">Open to Work</span>
+        </div>
+      </div>
     </div>
-
-    <div>
-
-      <!-- EDIT: info rows -->
-      <div class="info-row">
-        <span class="info-label">Location</span>
-        <span class="info-value">Dhaka, Bangladesh</span>
-      </div>
-
-      <div class="info-row">
-        <span class="info-label">Primary Stack</span>
-        <span class="info-value">C# / .NET / PostgreSQL</span>
-      </div>
-
-      <div class="info-row">
-        <span class="info-label">Focus</span>
-        <span class="info-value">Backend Systems</span>
-      </div>
-
-      <div class="info-row">
-        <span class="info-label">Education</span>
-        <span class="info-value">CSE / ADUST</span>
-      </div>
-
-      <div class="info-row">
-        <span class="info-label">Status</span>
-        <span class="info-value available">Open to Work</span>
-      </div>
-
-    </div>
-
   </div>
   <!-- /about -->
 
 
   <!-- ═══════════════════════════════════════
-       CONTACT
-       নতুন platform → .contact-item div copy করো
+       CONTACT SECTION (SEPARATE)
   ════════════════════════════════════════ -->
   <div class="section" id="contact">
-    <p class="section-label">Contact</p>
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-grid">
+      <a href="mailto:ferdousur.info@gmail.com" class="contact-card">
+        <span class="icon">✉️</span>
+        <div class="contact-info">
+          <h4>Email</h4>
+          <p>ferdousur.info@gmail.com</p>
+        </div>
+      </a>
 
-    <!-- EDIT: href এ তোমার email -->
-    <a href="mailto:ferdousur.info@gmail.com" class="contact-item">
-      <div class="contact-left">
-        <p class="contact-platform">Email</p>
-        <p class="contact-value">ferdousur.info@gmail.com</p>
-      </div>
-      <span class="contact-arrow">→</span>
-    </a>
+      <a href="https://linkedin.com/in/ferdousur-rahman/" target="_blank" class="contact-card">
+        <span class="icon">💼</span>
+        <div class="contact-info">
+          <h4>LinkedIn</h4>
+          <p>linkedin.com/in/ferdousur-rahman</p>
+        </div>
+      </a>
 
-    <!-- EDIT: href এ তোমার GitHub -->
-    <a href="https://github.com/ferdousur" target="_blank" class="contact-item">
-      <div class="contact-left">
-        <p class="contact-platform">GitHub</p>
-        <p class="contact-value">github.com/ferdousur</p>
-      </div>
-      <span class="contact-arrow">→</span>
-    </a>
-
-    <!-- EDIT: href এ তোমার LinkedIn -->
-    <a href="https://www.linkedin.com/in/ferdousur-rahman/" target="_blank" class="contact-item">
-      <div class="contact-left">
-        <p class="contact-platform">LinkedIn</p>
-        <p class="contact-value">linkedin.com/in/ferdousur-rahman</p>
-      </div>
-      <span class="contact-arrow">→</span>
-    </a>
-
+      <a href="https://github.com/ferdousur" target="_blank" class="contact-card">
+        <span class="icon">💻</span>
+        <div class="contact-info">
+          <h4>GitHub</h4>
+          <p>github.com/ferdousur</p>
+        </div>
+      </a>
+    </div>
   </div>
   <!-- /contact -->
 
-
   <footer>
-    <!-- EDIT: তোমার নাম -->
-    Ferdousur Rahman · 2025
+    © 2026 Ferdousur Rahman. Built with ❤️ and Code.
   </footer>
 
 </div>
-<!-- /container -->
 
 </body>
 </html>

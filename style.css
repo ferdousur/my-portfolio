@@ -40,7 +40,23 @@ nav {
   align-items: center;
   z-index: 100;
 }
+/* Nav Logo Styling */
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+.nav-logo {
+  height: 55px; /* Logo er height fix kora holo */
+  width: auto;  /* Width automatic adjust hobe */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05); /* Hover e ektu boro hobe */
+}
 .nav-name { font-weight: 700; font-size: 1.3rem; color: var(--text); }
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a { font-size: 0.95rem; font-weight: 500; color: var(--text-muted); }

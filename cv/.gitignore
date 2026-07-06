@@ -2,5 +2,5 @@
 *.log
 *.out
 *.fdb_latexmk
-main.pdf
-
+*.fls
+*.synctex.gz

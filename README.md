@@ -76,3 +76,4 @@ my-portfolio/
 ├── favicon.png         # Browser tab icon
 ├── CV of Ferdousur Rahman.pdf # Resume file
 └── README.md           # Project documentation
+# Trigger deployment Tue Jul  7 11:40:45 +06 2026
